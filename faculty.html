@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Mentors - REU ASSET: Advanced Secured Sensor Enabling Technologies at FIU</title>
+    <link rel="icon" type="image/jpeg" href="FIU-logo.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fiu-navy': '#003366',
+                        'fiu-gold': '#B8860B',
+                        'fiu-light-gold': '#FFD700',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-fiu-navy text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="index.html">
+                            <img class="h-8 sm:h-10 w-auto hover:opacity-80 transition-opacity cursor-pointer" src="../Florida_International_University_FIU_logo.svg.png" alt="FIU Logo">
+                        </a>
+                    </div>
+                    <div class="ml-2 sm:ml-4">
+                        <h1 class="text-sm sm:text-lg md:text-xl font-bold hidden sm:block">REU ASSET: Advanced Secured Sensor Enabling Technologies</h1>
+                        <h1 class="text-sm font-bold block sm:hidden">REU ASSET</h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="about.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="research.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Research Projects</a>
+                        <a href="faculty.html" class="bg-fiu-gold text-fiu-navy px-3 py-2 rounded-md text-sm font-medium">Faculty Mentors</a>
+                        <a href="application.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Application Info</a>
+                        <a href="faq.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">FAQs</a>
+                        <a href="contact.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Page Header -->
+    <section class="bg-fiu-navy text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Faculty Mentors</h1>
+                <p class="text-xl max-w-3xl mx-auto">
+                    Meet our world-class faculty researchers who will guide your journey in advanced sensor technologies and cybersecurity
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Grid -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                
+                <!-- Faculty Member 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="PISSINOU.jpg" 
+                         alt="Dr. Nikki Pissinou" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-fiu-navy mb-2">Dr. Nikki Pissinou</h3>
+                        <p class="text-fiu-gold font-semibold mb-3">Professor, School of Computing and Information Sciences</p>
+                        <p class="text-gray-700 mb-4">
+                            Dr. Pissinou is a highly accomplished researcher with over 250 publications in areas such as networking, 
+                            security, and mobile systems, and has co-edited numerous conference volumes and texts. Her work, widely 
+                            cited and funded by major agencies like NSF and NASA, has earned her multiple awards, and she has played 
+                            leading roles in professional communities, mentored over 19 Ph.D. students, and served on countless editorial 
+                            and advisory boards.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold text-fiu-navy mb-2">Research Interests:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-fiu-navy text-white px-2 py-1 rounded text-sm">IoT Security</span>
+                                <span class="bg-fiu-navy text-white px-2 py-1 rounded text-sm">Cyber-Physical Systems</span>
+                                <span class="bg-fiu-navy text-white px-2 py-1 rounded text-sm">Wireless Sensor Networks</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 text-gray-600">
+                            <a href="mailto:pissinou@cis.fiu.edu" class="hover:text-fiu-gold transition-colors">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://www.cis.fiu.edu/faculty-staff/niki-pissinou/" class="hover:text-fiu-gold transition-colors" target="_blank">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Faculty Member 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="S-S-Iyengar-e1646762366279.jpg" 
+                         alt="Dr. S.S. Iyengar" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-fiu-navy mb-2">Dr. S.S. Iyengar</h3>
+                        <p class="text-fiu-gold font-semibold mb-3">Ryder Professor and Director, School of Computing and Information Sciences</p>
+                        <p class="text-gray-700 mb-4">
+                            Dr. S.S. Iyengar is an internationally recognized computer scientist and the Ryder Professor at Florida International University, 
+                            known for pioneering work in high-performance algorithms, sensor fusion, and intelligent systems. With decades of impactful research funded by 
+                            major agencies like NSF, DARPA, and NASA, his innovations have influenced academia, industry, and national laboratories worldwide. 
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold text-fiu-navy mb-2">Research Interests:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-fiu-navy text-white px-2 py-1 rounded text-sm">High-Performance Computing</span>
+                                <span class="bg-fiu-navy text-white px-2 py-1 rounded text-sm">Sensor Fusion & Intelligent Systems</span>
+                                <span class="bg-fiu-navy text-white px-2 py-1 rounded text-sm">Biomedical & Autonomous Systems</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 text-gray-600">
+                            <a href="mailto:iyengar@cis.fiu.edu" class="hover:text-fiu-gold transition-colors">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://www.cis.fiu.edu/faculty-staff/s-s-iyengar/" class="hover:text-fiu-gold transition-colors" target="_blank">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Faculty Member 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="afanasyev.jpg" 
+                         alt="Dr. Nagarajan Prabakar" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-fiu-navy mb-2">Dr. Alexander Afanasyev</h3>
+                        <p class="text-fiu-gold font-semibold mb-3">Associate Professor, School of Computing and Information Sciences</p>
+                        <p class="text-gray-700 mb-4">
+                            Dr. Afanasyev is an Assistant Professor at FIU specializing in next-generation Internet architecture, particularly 
+                            through his work on Named Data Networking (NDN). His research focuses on scalable routing, security, and applying 
+                            Information-Centric Networking to IoT systems, aiming to enable secure, seamless communication between applications and devices.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold text-fiu-navy mb-2">Research Interests:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-fiu-navy text-white px-2 py-1 rounded text-sm">Named Data Networking (NDN)</span>
+                                <span class="bg-fiu-navy text-white px-2 py-1 rounded text-sm">Information-Centric Networking (ICN)</span>
+                                <span class="bg-fiu-navy text-white px-2 py-1 rounded text-sm">oT Security & Connectivity</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 text-gray-600">
+                            <a href="mailto:prabakar@cis.fiu.edu" class="hover:text-fiu-gold transition-colors">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="hover:text-fiu-gold transition-colors">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                            <a href="#" class="hover:text-fiu-gold transition-colors">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Faculty Member 4 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="hadi-amini.jpg" 
+                         alt="Dr. Hadi Amini" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-fiu-navy mb-2">Dr. Hadi Amini</h3>
+                        <p class="text-fiu-gold font-semibold mb-3">Visiting Assistant Professor, School of Computing and Information Sciences</p>
+                        <p class="text-gray-700 mb-4">
+                            Dr. Amini is an Assistant Professor at FIU and director of the SOLID (Sustainability, Optimization, and Learning for 
+                            InterDependent networks) lab. His research focuses on machine learning, optimization, and distributed intelligence with 
+                            applications in smart cities, robotics, energy systems, and cyber-physical resilience.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold text-fiu-navy mb-2">Research Interests:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-fiu-navy text-white px-2 py-1 rounded text-sm">Machine Learning & Optimization</span>
+                                <span class="bg-fiu-navy text-white px-2 py-1 rounded text-sm">Cyber-Physical Systems</span>
+                                <span class="bg-fiu-navy text-white px-2 py-1 rounded text-sm">Smart Cities & Resilient Networks</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 text-gray-600">
+                            <a href="mailto:amini@cs.fiu.edu" class="hover:text-fiu-gold transition-colors">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://www.cis.fiu.edu/faculty-staff/m-hadi-amini/" class="hover:text-fiu-gold transition-colors" target="_blank">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Faculty Member 5 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="leonardo-bobadilla.jpg" 
+                         alt="Dr. Leonardo Bobadilla" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-fiu-navy mb-2">Dr. Leonardo Bobadilla</h3>
+                        <p class="text-fiu-gold font-semibold mb-3">Associate Professor, Electrical & Computer Engineering</p>
+                        <p class="text-gray-700 mb-4">
+                            Dr. Bobadilla is an Assistant Professor at FIU whose research focuses on the information requirements for core robotics 
+                            tasks such as navigation, tracking, and motion safety. He develops and tests scalable robotic systems with minimal sensing and 
+                            computation, with work funded by agencies like the NSF, ARO, and DHS.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold text-fiu-navy mb-2">Research Interests:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-fiu-navy text-white px-2 py-1 rounded text-sm">Autonomous Robotics</span>
+                                <span class="bg-fiu-navy text-white px-2 py-1 rounded text-sm">Motion Planning & Navigation</span>
+                                <span class="bg-fiu-navy text-white px-2 py-1 rounded text-sm">Multi-Robot Systems</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 text-gray-600">
+                            <a href="mailto:marahman@fiu.edu" class="hover:text-fiu-gold transition-colors">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="hover:text-fiu-gold transition-colors">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                            <a href="#" class="hover:text-fiu-gold transition-colors">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Faculty Member 6 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="kianoosh.webp" 
+                         alt="Dr. Kianoosh Boroojeni" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-fiu-navy mb-2">Dr. Kianoosh Boroojeni</h3>
+                        <p class="text-fiu-gold font-semibold mb-3">Professor, Electrical & Computer Engineering</p>
+                        <p class="text-gray-700 mb-4">
+                            Dr. Boroojeni is a researcher with expertise in network optimization and cybersecurity, holding a Ph.D. in Computer Science 
+                            from FIU and a B.Sc. from the University of Tehran. He is the author of five books and numerous peer-reviewed publications, 
+                            with award-winning contributions to graduate research and conference papers.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold text-fiu-navy mb-2">Research Interests:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-fiu-navy text-white px-2 py-1 rounded text-sm">Network Optimization</span>
+                                <span class="bg-fiu-navy text-white px-2 py-1 rounded text-sm">Cybersecurity</span>
+                                <span class="bg-fiu-navy text-white px-2 py-1 rounded text-sm">Applied Algorithms</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 text-gray-600">
+                            <a href="mailto:kgholami@fiu.edu" class="hover:text-fiu-gold transition-colors">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://www.cis.fiu.edu/faculty-staff/kianoosh-boroojeni/" class="hover:text-fiu-gold transition-colors" target="_blank">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentorship Program -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-fiu-navy mb-4">Mentorship Program</h2>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                    Our faculty mentors provide comprehensive guidance throughout your research journey
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-fiu-navy text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-fiu-navy mb-3">One-on-One Meetings</h3>
+                    <p class="text-gray-700">
+                        Regular individual meetings with your faculty mentor to discuss research progress and career goals.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-fiu-navy text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chalkboard-teacher text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-fiu-navy mb-3">Research Guidance</h3>
+                    <p class="text-gray-700">
+                        Expert guidance on research methodology, data analysis, and scientific writing.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-fiu-navy text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-rocket text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-fiu-navy mb-3">Career Development</h3>
+                    <p class="text-gray-700">
+                        Support for graduate school applications, career planning, and professional networking.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-fiu-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Work with World-Class Researchers</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                Join our distinguished faculty in advancing the frontiers of advanced sensor technologies and cybersecurity. 
+                Apply now to begin your research journey at FIU.
+            </p>
+            <div class="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
+                <a href="https://etap.nsf.gov/award/184/opportunity/7890" class="inline-block bg-fiu-gold text-fiu-navy px-8 py-4 rounded-lg text-lg font-semibold hover:bg-fiu-light-gold transition-colors" target="_blank">
+                    Apply Now
+                </a>
+                <a href="research.html" class="inline-block border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-fiu-navy transition-colors">
+                    View Research Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <h3 class="text-lg font-bold mb-4">REU ASSET: Advanced Secured Sensor Enabling Technologies</h3>
+                    <p class="text-gray-300">Florida International University<br>Miami, FL 33199</p>
+                </div>
+                <div class="flex justify-center">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 text-center">Quick Links</h3>
+                        <ul class="space-y-2 text-gray-300 text-center">
+                            <li><a href="about.html" class="hover:text-fiu-gold transition-colors">About</a></li>
+                            <li><a href="research.html" class="hover:text-fiu-gold transition-colors">Research</a></li>
+                            <li><a href="application.html" class="hover:text-fiu-gold transition-colors">Apply</a></li>
+                            <li><a href="contact.html" class="hover:text-fiu-gold transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 text-center">Resources</h3>
+                        <ul class="space-y-2 text-gray-300 text-center">
+                            <li><a href="faq.html" class="hover:text-fiu-gold transition-colors">FAQs</a></li>
+                            <li><a href="https://etap.nsf.gov/" class="hover:text-fiu-gold transition-colors" target="_blank">NSF REU Program</a></li>
+                            <li><a href="https://cec.fiu.edu/" class="hover:text-fiu-gold transition-colors" target="_blank">FIU Engineering</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 text-center">Follow Us</h3>
+                        <div class="flex space-x-4 justify-center">
+                            <a href="https://x.com/FIU" class="text-gray-300 hover:text-fiu-gold transition-colors" target="_blank">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/school/florida-international-university/" class="text-gray-300 hover:text-fiu-gold transition-colors" target="_blank">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/fiuinstagram/?hl=en" class="text-gray-300 hover:text-fiu-gold transition-colors" target="_blank">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Florida International University. All rights reserved. | This material is based upon work supported by the National Science Foundation and the Department of Defense.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Info - REU Site: Quantum & Secure Networking at FIU</title>
+    <link rel="icon" type="image/jpeg" href="FIU-logo.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fiu-navy': '#003366',
+                        'fiu-gold': '#B8860B',
+                        'fiu-light-gold': '#FFD700',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-fiu-navy text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="index.html">
+                            <img class="h-8 sm:h-10 w-auto hover:opacity-80 transition-opacity cursor-pointer" src="../Florida_International_University_FIU_logo.svg.png" alt="FIU Logo">
+                        </a>
+                    </div>
+                    <div class="ml-2 sm:ml-4">
+                        <h1 class="text-sm sm:text-lg md:text-xl font-bold hidden sm:block">REU ASSET: Advanced Secured Sensor Enabling Technologies</h1>
+                        <h1 class="text-sm font-bold block sm:hidden">REU ASSET</h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="about.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="research.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Research Projects</a>
+                        <a href="faculty.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Faculty Mentors</a>
+                        <a href="application.html" class="bg-fiu-gold text-fiu-navy px-3 py-2 rounded-md text-sm font-medium">Application Info</a>
+                        <a href="faq.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">FAQs</a>
+                        <a href="contact.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Page Header -->
+    <section class="bg-fiu-navy text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Application Information</h1>
+                <p class="text-xl max-w-3xl mx-auto">
+                    Everything you need to know about applying to our REU program
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Timeline -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-fiu-navy mb-4">Important Dates</h2>
+                <p class="text-xl text-gray-700">Mark your calendar for these critical deadlines</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-8">
+                    <div class="flex items-center p-6 bg-gray-50 rounded-lg">
+                        <div class="bg-fiu-navy text-white w-20 h-20 rounded-full flex items-center justify-center mr-6">
+                            <div class="text-center">
+                                <div class="font-bold text-sm">JAN</div>
+                                <div class="font-bold text-lg">15</div>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-fiu-navy mb-2">Application Deadline</h3>
+                            <p class="text-gray-700">All application materials must be submitted by 11:59 PM EST</p>
+                        </div>
+                        <div class="text-fiu-gold font-bold">PRIORITY</div>
+                    </div>
+                    
+                    <div class="flex items-center p-6 bg-gray-50 rounded-lg">
+                        <div class="bg-fiu-navy text-white w-20 h-20 rounded-full flex items-center justify-center mr-6">
+                            <div class="text-center">
+                                <div class="font-bold text-sm">MAR</div>
+                                <div class="font-bold text-lg">1</div>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-fiu-navy mb-2">Notification Date</h3>
+                            <p class="text-gray-700">Applicants will be notified of selection decisions</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center p-6 bg-gray-50 rounded-lg">
+                        <div class="bg-fiu-navy text-white w-20 h-20 rounded-full flex items-center justify-center mr-6">
+                            <div class="text-center">
+                                <div class="font-bold text-sm">MAR</div>
+                                <div class="font-bold text-lg">15</div>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-fiu-navy mb-2">Acceptance Deadline</h3>
+                            <p class="text-gray-700">Selected participants must confirm acceptance</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center p-6 bg-fiu-gold text-fiu-navy rounded-lg">
+                        <div class="bg-fiu-navy text-white w-20 h-20 rounded-full flex items-center justify-center mr-6">
+                            <div class="text-center">
+                                <div class="font-bold text-sm">JUN</div>
+                                <div class="font-bold text-lg">3</div>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold mb-2">Program Begins</h3>
+                            <p>Welcome orientation and program start (10-week program)</p>
+                        </div>
+                        <div class="font-bold">START</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eligibility & Requirements -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                
+                <!-- Eligibility -->
+                <div>
+                    <h2 class="text-3xl font-bold text-fiu-navy mb-8">Eligibility Requirements</h2>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="flex items-start">
+                                <div class="bg-fiu-gold text-white w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-user-graduate text-sm"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-fiu-navy mb-2">Academic Status</h3>
+                                    <p class="text-gray-700">Currently enrolled undergraduate student at a U.S. college or university.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="flex items-start">
+                                <div class="bg-fiu-gold text-white w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-flag-usa text-sm"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-fiu-navy mb-2">Citizenship</h3>
+                                    <p class="text-gray-700">U.S. citizen, U.S. national, or permanent resident (green card holder).</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="flex items-start">
+                                <div class="bg-fiu-gold text-white w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-chart-line text-sm"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-fiu-navy mb-2">Academic Performance</h3>
+                                    <p class="text-gray-700">Minimum cumulative GPA of 3.0 on a 4.0 scale and good academic standing at home institution.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="flex items-start">
+                                <div class="bg-fiu-gold text-white w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-book text-sm"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-fiu-navy mb-2">Coursework</h3>
+                                    <p class="text-gray-700">Completed coursework in mathematics (calculus), physics, computer science, or engineering. Programming experience preferred but not required.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Required Documents -->
+                <div>
+                    <h2 class="text-3xl font-bold text-fiu-navy mb-8">Required Documents</h2>
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded-lg shadow-lg flex items-center">
+                            <div class="bg-fiu-navy text-white w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-fiu-navy">Online Application Form</h3>
+                                <p class="text-gray-600">Complete the NSF ETAP application system</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg shadow-lg flex items-center">
+                            <div class="bg-fiu-navy text-white w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-fiu-navy">Official Transcript</h3>
+                                <p class="text-gray-600">From all colleges/universities attended</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg shadow-lg flex items-center">
+                            <div class="bg-fiu-navy text-white w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-pencil-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-fiu-navy">Personal Statement</h3>
+                                <p class="text-gray-600">2-page essay describing research interests and goals</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg shadow-lg flex items-center">
+                            <div class="bg-fiu-navy text-white w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-fiu-navy">Letters of Recommendation</h3>
+                                <p class="text-gray-600">Two letters from faculty or research mentors</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg shadow-lg flex items-center">
+                            <div class="bg-fiu-navy text-white w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-id-card"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-fiu-navy">Resume/CV</h3>
+                                <p class="text-gray-600">Academic and research experience summary</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits & Compensation -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-fiu-navy mb-4">Program Benefits</h2>
+                <p class="text-xl text-gray-700">Comprehensive support for your research experience</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-fiu-navy text-white p-8 rounded-lg text-center">
+                    <div class="text-3xl font-bold mb-2">$6,000</div>
+                    <h3 class="text-lg font-semibold mb-2">Research Stipend</h3>
+                    <p class="text-sm opacity-90">Tax-free research allowance for 10 weeks</p>
+                </div>
+                
+                <div class="bg-fiu-gold text-fiu-navy p-8 rounded-lg text-center">
+                    <div class="text-3xl font-bold mb-2">$500</div>
+                    <h3 class="text-lg font-semibold mb-2">Travel Support</h3>
+                    <p class="text-sm">Round-trip travel to Miami, FL</p>
+                </div>
+                
+                <div class="bg-fiu-navy text-white p-8 rounded-lg text-center">
+                    <i class="fas fa-home text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Housing</h3>
+                    <p class="text-sm opacity-90">On-campus dormitory accommodation</p>
+                </div>
+                
+                <div class="bg-fiu-gold text-fiu-navy p-8 rounded-lg text-center">
+                    <i class="fas fa-utensils text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Meal Plan</h3>
+                    <p class="text-sm">Campus dining hall access</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-gray-50 p-8 rounded-lg">
+                <h3 class="text-2xl font-bold text-fiu-navy mb-6 text-center">Additional Benefits</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-fiu-gold mr-3"></i>
+                            <span>Access to state-of-the-art research facilities</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-fiu-gold mr-3"></i>
+                            <span>Professional development workshops</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-fiu-gold mr-3"></i>
+                            <span>Graduate school preparation seminars</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-fiu-gold mr-3"></i>
+                            <span>Research presentation opportunities</span>
+                        </li>
+                    </ul>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-fiu-gold mr-3"></i>
+                            <span>Conference attendance support</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-fiu-gold mr-3"></i>
+                            <span>Networking with faculty and peers</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-fiu-gold mr-3"></i>
+                            <span>Mentorship from graduate students</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-fiu-gold mr-3"></i>
+                            <span>Publication assistance and support</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Tips -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-fiu-navy mb-4">Application Tips</h2>
+                <p class="text-xl text-gray-700">Maximize your chances of selection with these guidelines</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="bg-fiu-navy text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-lightbulb text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-fiu-navy mb-3">Personal Statement</h3>
+                    <p class="text-gray-700">Clearly articulate your research interests, career goals, and motivation for quantum/security research.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="bg-fiu-navy text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-star text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-fiu-navy mb-3">Strong Recommendations</h3>
+                    <p class="text-gray-700">Choose recommenders who know your academic work well and can speak to your research potential.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="bg-fiu-navy text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-clock text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-fiu-navy mb-3">Apply Early</h3>
+                    <p class="text-gray-700">Submit your application well before the deadline to avoid technical issues and show enthusiasm.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Now Section -->
+    <section class="py-16 bg-fiu-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Apply?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                Join us for an unforgettable research experience at the forefront of quantum technologies and cybersecurity. 
+                Applications for Summer 2025 are now open!
+            </p>
+            <div class="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
+                <a href="https://etap.nsf.gov/award/184/opportunity/7890" class="inline-block bg-fiu-gold text-fiu-navy px-8 py-4 rounded-lg text-lg font-semibold hover:bg-fiu-light-gold transition-colors" target="_blank">
+                    Start Application
+                </a>
+                <a href="contact.html" class="inline-block border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-fiu-navy transition-colors">
+                    Contact Us
+                </a>
+            </div>
+            <div class="mt-8 text-fiu-gold">
+                <p class="font-semibold">Application Deadline: January 15, 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <h3 class="text-lg font-bold mb-4">REU ASSET: Advanced Secured Sensor Enabling Technologies</h3>
+                    <p class="text-gray-300">Florida International University<br>Miami, FL 33199</p>
+                </div>
+                <div class="flex justify-center">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 text-center">Quick Links</h3>
+                        <ul class="space-y-2 text-gray-300 text-center">
+                            <li><a href="about.html" class="hover:text-fiu-gold transition-colors">About</a></li>
+                            <li><a href="research.html" class="hover:text-fiu-gold transition-colors">Research</a></li>
+                            <li><a href="application.html" class="hover:text-fiu-gold transition-colors">Apply</a></li>
+                            <li><a href="contact.html" class="hover:text-fiu-gold transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 text-center">Resources</h3>
+                        <ul class="space-y-2 text-gray-300 text-center">
+                            <li><a href="faq.html" class="hover:text-fiu-gold transition-colors">FAQs</a></li>
+                            <li><a href="https://etap.nsf.gov/" class="hover:text-fiu-gold transition-colors" target="_blank">NSF REU Program</a></li>
+                            <li><a href="https://cec.fiu.edu/" class="hover:text-fiu-gold transition-colors" target="_blank">FIU Engineering</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 text-center">Follow Us</h3>
+                        <div class="flex space-x-4 justify-center">
+                            <a href="https://x.com/FIU" class="text-gray-300 hover:text-fiu-gold transition-colors" target="_blank">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/school/florida-international-university/" class="text-gray-300 hover:text-fiu-gold transition-colors" target="_blank">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/fiuinstagram/?hl=en" class="text-gray-300 hover:text-fiu-gold transition-colors" target="_blank">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Florida International University. All rights reserved. | This material is based upon work supported by the National Science Foundation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 

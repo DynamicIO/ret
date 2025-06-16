@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - REU Site: Quantum & Secure Networking at FIU</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fiu-navy': '#003366',
+                        'fiu-gold': '#B8860B',
+                        'fiu-light-gold': '#FFD700',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-fiu-navy text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="index.html">
+                            <img class="h-8 sm:h-10 w-auto hover:opacity-80 transition-opacity cursor-pointer" src="../Florida_International_University_FIU_logo.svg.png" alt="FIU Logo">
+                        </a>
+                    </div>
+                    <div class="ml-2 sm:ml-4">
+                        <h1 class="text-sm sm:text-lg md:text-xl font-bold hidden sm:block">REU ASSET: Advanced Secured Sensor Enabling Technologies</h1>
+                        <h1 class="text-sm font-bold block sm:hidden">REU ASSET</h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="about.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="research.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Research Projects</a>
+                        <a href="faculty.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Faculty Mentors</a>
+                        <a href="application.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Application Info</a>
+                        <a href="faq.html" class="bg-fiu-gold text-fiu-navy px-3 py-2 rounded-md text-sm font-medium">FAQs</a>
+                        <a href="contact.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Page Header -->
+    <section class="bg-fiu-navy text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Frequently Asked Questions</h1>
+                <p class="text-xl max-w-3xl mx-auto">
+                    Find answers to common questions about our REU program
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Sections -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Application Process -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-fiu-navy mb-6">Application Process</h2>
+                <div class="space-y-4">
+                    
+                    <div class="bg-white rounded-lg shadow-lg">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" data-target="faq-1">
+                            <h3 class="text-lg font-semibold text-fiu-navy">What are the application requirements?</h3>
+                            <i class="fas fa-chevron-down text-fiu-gold transition-transform"></i>
+                        </button>
+                        <div id="faq-1" class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-700">
+                                U.S. citizen/permanent resident, undergrad at U.S. institution, 3.0+ GPA, coursework in STEM fields. 
+                                Submit transcript, resume, personal statement, and two recommendations.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" data-target="faq-2">
+                            <h3 class="text-lg font-semibold text-fiu-navy">When is the application deadline?</h3>
+                            <i class="fas fa-chevron-down text-fiu-gold transition-transform"></i>
+                        </button>
+                        <div id="faq-2" class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-700">
+                                January 15, 2025, 11:59 PM EST.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" data-target="faq-3">
+                            <h3 class="text-lg font-semibold text-fiu-navy">How competitive is the selection process?</h3>
+                            <i class="fas fa-chevron-down text-fiu-gold transition-transform"></i>
+                        </button>
+                        <div id="faq-3" class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-700">
+                                Very competitive—200–300 applicants for 10–12 spots. Selection is based on academics, research interest, and STEM engagement.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" data-target="faq-4">
+                            <h3 class="text-lg font-semibold text-fiu-navy">Can international students apply?</h3>
+                            <i class="fas fa-chevron-down text-fiu-gold transition-transform"></i>
+                        </button>
+                        <div id="faq-4" class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-700">
+                                No. NSF only permits U.S. citizens, nationals, or permanent residents.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Program Details -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-fiu-navy mb-6">Program Details</h2>
+                <div class="space-y-4">
+
+                    <div class="bg-white rounded-lg shadow-lg">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" data-target="faq-5">
+                            <h3 class="text-lg font-semibold text-fiu-navy">What is the program duration and schedule?</h3>
+                            <i class="fas fa-chevron-down text-fiu-gold transition-transform"></i>
+                        </button>
+                        <div id="faq-5" class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-700">
+                                10 weeks (June 3 – August 9, 2025), 40 hours/week with seminars and professional development.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" data-target="faq-6">
+                            <h3 class="text-lg font-semibold text-fiu-navy">Do I need prior research experience?</h3>
+                            <i class="fas fa-chevron-down text-fiu-gold transition-transform"></i>
+                        </button>
+                        <div id="faq-6" class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-700">
+                                No. Passion and academic readiness are key. Training provided.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" data-target="faq-7">
+                            <h3 class="text-lg font-semibold text-fiu-navy">What programming languages should I know?</h3>
+                            <i class="fas fa-chevron-down text-fiu-gold transition-transform"></i>
+                        </button>
+                        <div id="faq-7" class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-700">
+                                Primarily Python; also C++, MATLAB, Java. Beginners are welcome.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" data-target="faq-8">
+                            <h3 class="text-lg font-semibold text-fiu-navy">How are research projects assigned?</h3>
+                            <i class="fas fa-chevron-down text-fiu-gold transition-transform"></i>
+                        </button>
+                        <div id="faq-8" class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-700">
+                                Based on your interests, background, and mentor availability. You'll meet mentors during Week 1.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Living & Logistics -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-fiu-navy mb-6">Living & Logistics</h2>
+                <div class="space-y-4">
+
+                    <div class="bg-white rounded-lg shadow-lg">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" data-target="faq-9">
+                            <h3 class="text-lg font-semibold text-fiu-navy">What housing is provided?</h3>
+                            <i class="fas fa-chevron-down text-fiu-gold transition-transform"></i>
+                        </button>
+                        <div id="faq-9" class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-700">
+                                On-campus dorms with shared rooms, A/C, WiFi, laundry, and gym access.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" data-target="faq-10">
+                            <h3 class="text-lg font-semibold text-fiu-navy">Are meals included?</h3>
+                            <i class="fas fa-chevron-down text-fiu-gold transition-transform"></i>
+                        </button>
+                        <div id="faq-10" class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-700">
+                                Yes. A full meal plan (breakfast, lunch, dinner) at FIU dining halls is provided.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" data-target="faq-11">
+                            <h3 class="text-lg font-semibold text-fiu-navy">How do I get to FIU?</h3>
+                            <i class="fas fa-chevron-down text-fiu-gold transition-transform"></i>
+                        </button>
+                        <div id="faq-11" class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-700">
+                                Up to $500 in travel support. Most students fly to Miami International Airport (MIA). Shuttles provided.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" data-target="faq-12">
+                            <h3 class="text-lg font-semibold text-fiu-navy">What should I bring?</h3>
+                            <i class="fas fa-chevron-down text-fiu-gold transition-transform"></i>
+                        </button>
+                        <div id="faq-12" class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-700">
+                                Summer clothes, laptop, bedding, toiletries, medications, and business attire.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- After the Program -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-fiu-navy mb-6">After the Program</h2>
+                <div class="space-y-4">
+
+                    <div class="bg-white rounded-lg shadow-lg">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" data-target="faq-13">
+                            <h3 class="text-lg font-semibold text-fiu-navy">Will I be able to publish my research?</h3>
+                            <i class="fas fa-chevron-down text-fiu-gold transition-transform"></i>
+                        </button>
+                        <div id="faq-13" class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-700">
+                                Possibly. Many students co-author publications or present at conferences post-program.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" data-target="faq-14">
+                            <h3 class="text-lg font-semibold text-fiu-navy">Can I pursue graduate studies at FIU?</h3>
+                            <i class="fas fa-chevron-down text-fiu-gold transition-transform"></i>
+                        </button>
+                        <div id="faq-14" class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-700">
+                                Yes. Mentors support grad applications and ongoing collaboration.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" data-target="faq-15">
+                            <h3 class="text-lg font-semibold text-fiu-navy">What career support is offered?</h3>
+                            <i class="fas fa-chevron-down text-fiu-gold transition-transform"></i>
+                        </button>
+                        <div id="faq-15" class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-700">
+                                Resume help, grad school prep, networking, and access to alumni mentorship.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Still Have Questions? -->
+            <div class="bg-fiu-navy text-white p-8 rounded-lg text-center">
+                <h2 class="text-2xl font-bold mb-4">Still Have Questions?</h2>
+                <p class="text-lg mb-6">
+                    Can't find the answer you're looking for? Our program coordinators are here to help!
+                </p>
+                <a href="contact.html" class="inline-block bg-fiu-gold text-fiu-navy px-8 py-3 rounded-lg font-semibold hover:bg-fiu-light-gold transition-colors">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <h3 class="text-lg font-bold mb-4">REU ASSET: Advanced Secured Sensor Enabling Technologies</h3>
+                    <p class="text-gray-300">Florida International University<br>Miami, FL 33199</p>
+                </div>
+                <div class="flex justify-center">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 text-center">Quick Links</h3>
+                        <ul class="space-y-2 text-gray-300 text-center">
+                            <li><a href="about.html" class="hover:text-fiu-gold transition-colors">About</a></li>
+                            <li><a href="research.html" class="hover:text-fiu-gold transition-colors">Research</a></li>
+                            <li><a href="application.html" class="hover:text-fiu-gold transition-colors">Apply</a></li>
+                            <li><a href="contact.html" class="hover:text-fiu-gold transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 text-center">Resources</h3>
+                        <ul class="space-y-2 text-gray-300 text-center">
+                            <li><a href="faq.html" class="hover:text-fiu-gold transition-colors">FAQs</a></li>
+                            <li><a href="https://etap.nsf.gov/" class="hover:text-fiu-gold transition-colors" target="_blank">NSF REU Program</a></li>
+                            <li><a href="https://cec.fiu.edu/" class="hover:text-fiu-gold transition-colors" target="_blank">FIU Engineering</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 text-center">Follow Us</h3>
+                        <div class="flex space-x-4 justify-center">
+                            <a href="https://x.com/FIU" class="text-gray-300 hover:text-fiu-gold transition-colors" target="_blank">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/school/florida-international-university/" class="text-gray-300 hover:text-fiu-gold transition-colors" target="_blank">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/fiuinstagram/?hl=en" class="text-gray-300 hover:text-fiu-gold transition-colors" target="_blank">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Florida International University. All rights reserved. | This material is based upon work supported by the National Science Foundation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle (only if mobile menu button exists)
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', function() {
+                const mobileMenu = document.getElementById('mobile-menu');
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // FAQ accordion functionality
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const content = document.getElementById(targetId);
+                const icon = this.querySelector('i');
+                
+                // Toggle content visibility
+                content.classList.toggle('hidden');
+                
+                // Rotate icon
+                if (content.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                }
+                
+                // Close other open FAQs (optional - uncomment for accordion behavior)
+                /*
+                document.querySelectorAll('.faq-content').forEach(otherContent => {
+                    if (otherContent !== content && !otherContent.classList.contains('hidden')) {
+                        otherContent.classList.add('hidden');
+                        const otherButton = document.querySelector(`[data-target="${otherContent.id}"] i`);
+                        otherButton.style.transform = 'rotate(0deg)';
+                    }
+                });
+                */
+            });
+        });
+    </script>
+</body>
+</html> 

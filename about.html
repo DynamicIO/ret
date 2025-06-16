@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - REU ASSET: Advanced Secured Sensor Enabling Technologies at FIU</title>
+    <link rel="icon" type="image/jpeg" href="FIU-logo.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fiu-navy': '#003366',
+                        'fiu-gold': '#B8860B',
+                        'fiu-light-gold': '#FFD700',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-fiu-navy text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="index.html">
+                            <img class="h-8 sm:h-10 w-auto hover:opacity-80 transition-opacity cursor-pointer" src="../Florida_International_University_FIU_logo.svg.png" alt="FIU Logo">
+                        </a>
+                    </div>
+                    <div class="ml-2 sm:ml-4">
+                        <h1 class="text-sm sm:text-lg md:text-xl font-bold hidden sm:block">REU ASSET: Advanced Secured Sensor Enabling Technologies</h1>
+                        <h1 class="text-sm font-bold block sm:hidden">REU ASSET</h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="about.html" class="bg-fiu-gold text-fiu-navy px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="research.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Research Projects</a>
+                        <a href="faculty.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Faculty Mentors</a>
+                        <a href="application.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Application Info</a>
+                        <a href="faq.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">FAQs</a>
+                        <a href="contact.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-fiu-gold focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-fiu-navy">
+                <a href="index.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="bg-fiu-gold text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="research.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Research Projects</a>
+                <a href="faculty.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Faculty Mentors</a>
+                <a href="application.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Application Info</a>
+                <a href="faq.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">FAQs</a>
+                <a href="contact.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Page Header -->
+    <section class="bg-fiu-navy text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">About Our Program</h1>
+                <p class="text-xl max-w-3xl mx-auto">
+                    Discover the innovative REU ASSET program that's shaping the future of advanced sensor technologies and cybersecurity
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Description -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h2 class="text-3xl font-bold text-fiu-navy mb-6">Program Description</h2>
+                    <p class="text-lg text-gray-700 mb-6">
+                        The NSF and DOD sponsored REU ASSET program at Florida International University is a prestigious 
+                        10-week summer research program designed to provide undergraduate students with intensive research 
+                        experience in cutting-edge areas of advanced sensor technologies, cybersecurity, IoT systems, and emerging technologies.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Our program brings together talented undergraduate students from across the nation to work alongside 
+                        world-class faculty researchers in state-of-the-art laboratories. Participants engage in original 
+                        research projects that contribute to advancing knowledge in sensor security, data privacy, and next-generation sensing technologies.
+                    </p>
+                    <p class="text-lg text-gray-700">
+                        Located in the vibrant city of Miami, FIU provides an ideal environment for research and learning, 
+                        with access to cutting-edge facilities and a diverse, international community of scholars.
+                    </p>
+                </div>
+                <div>
+                    <img src="engineering.jpg" 
+                         alt="FIU Engineering" class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Goals -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-fiu-navy mb-4">Program Goals</h2>
+                <p class="text-xl text-gray-700">Our comprehensive approach to research education and professional development</p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="bg-fiu-navy text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-microscope text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-fiu-navy mb-4 text-center">Research Excellence</h3>
+                    <p class="text-gray-700 text-center">
+                        Provide hands-on experience with cutting-edge research in quantum communications, 
+                        cryptography, and network security through individual and collaborative projects.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="bg-fiu-navy text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-fiu-navy mb-4 text-center">Mentorship</h3>
+                    <p class="text-gray-700 text-center">
+                        Foster close mentoring relationships between undergraduate students and faculty 
+                        researchers to guide academic and professional development.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="bg-fiu-navy text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-graduation-cap text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-fiu-navy mb-4 text-center">Graduate School Prep</h3>
+                    <p class="text-gray-700 text-center">
+                        Prepare students for graduate studies and research careers through workshops, 
+                        seminars, and exposure to graduate school application processes.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="bg-fiu-navy text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-network-wired text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-fiu-navy mb-4 text-center">Professional Networks</h3>
+                    <p class="text-gray-700 text-center">
+                        Build professional networks through interactions with faculty, graduate students, 
+                        and peers from diverse backgrounds and institutions.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="bg-fiu-navy text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-lightbulb text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-fiu-navy mb-4 text-center">Innovation</h3>
+                    <p class="text-gray-700 text-center">
+                        Encourage innovative thinking and problem-solving skills through exposure to 
+                        real-world research challenges and emerging technologies.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="bg-fiu-navy text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-globe text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-fiu-navy mb-4 text-center">Diversity & Inclusion</h3>
+                    <p class="text-gray-700 text-center">
+                        Promote diversity in STEM fields by providing opportunities for underrepresented 
+                        students and fostering an inclusive research environment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eligibility -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-fiu-navy mb-8">Eligibility Requirements</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-fiu-gold text-white w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-fiu-navy mb-2">Academic Status</h3>
+                                <p class="text-gray-700">Currently enrolled undergraduate student at a U.S. college or university</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-fiu-gold text-white w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-fiu-navy mb-2">Citizenship</h3>
+                                <p class="text-gray-700">U.S. citizen, U.S. national, or permanent resident</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-fiu-gold text-white w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-fiu-navy mb-2">Academic Standing</h3>
+                                <p class="text-gray-700">Minimum GPA of 3.0 and good academic standing at home institution</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-fiu-gold text-white w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-fiu-navy mb-2">Academic Background</h3>
+                                <p class="text-gray-700">Completed coursework in mathematics, physics, computer science, or engineering</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-fiu-gold text-white w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-fiu-navy mb-2">Commitment</h3>
+                                <p class="text-gray-700">Available for the full 10-week program duration (June - August 2025)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-fiu-navy text-white p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-6">What We Provide</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <i class="fas fa-dollar-sign text-fiu-gold mr-3"></i>
+                            <span>$6,000 research stipend</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-home text-fiu-gold mr-3"></i>
+                            <span>On-campus housing (shared dormitory)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-utensils text-fiu-gold mr-3"></i>
+                            <span>Meal allowance</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-plane text-fiu-gold mr-3"></i>
+                            <span>Travel support (up to $500)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-laptop text-fiu-gold mr-3"></i>
+                            <span>Access to research facilities and equipment</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-certificate text-fiu-gold mr-3"></i>
+                            <span>Professional development workshops</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-presentation text-fiu-gold mr-3"></i>
+                            <span>Conference presentation opportunities</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-8">
+                        <a href="https://etap.nsf.gov/award/184/opportunity/7890" class="inline-block bg-fiu-gold text-fiu-navy px-6 py-3 rounded-lg font-semibold hover:bg-fiu-light-gold transition-colors" target="_blank">
+                            Apply Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Timeline -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-fiu-navy mb-4">Program Timeline</h2>
+                <p class="text-xl text-gray-700">Summer 2025 Program Schedule</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-8">
+                    <div class="flex items-center">
+                        <div class="bg-fiu-navy text-white w-16 h-16 rounded-full flex items-center justify-center mr-6">
+                            <span class="font-bold">Week 1</span>
+                        </div>
+                        <div class="flex-1 bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-lg font-bold text-fiu-navy mb-2">Orientation & Project Assignment</h3>
+                            <p class="text-gray-700">Welcome activities, safety training, research project selection, and initial meetings with faculty mentors.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="bg-fiu-navy text-white w-16 h-16 rounded-full flex items-center justify-center mr-6">
+                            <span class="font-bold text-xs text-center">Weeks 2-8</span>
+                        </div>
+                        <div class="flex-1 bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-lg font-bold text-fiu-navy mb-2">Active Research Phase</h3>
+                            <p class="text-gray-700">Intensive research work, weekly seminars, professional development workshops, and progress presentations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="bg-fiu-navy text-white w-16 h-16 rounded-full flex items-center justify-center mr-6">
+                            <span class="font-bold text-xs text-center">Weeks 9-10</span>
+                        </div>
+                        <div class="flex-1 bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-lg font-bold text-fiu-navy mb-2">Final Presentations & Wrap-up</h3>
+                            <p class="text-gray-700">Final research presentations, poster sessions, program evaluation, and celebration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <h3 class="text-lg font-bold mb-4">REU ASSET: Advanced Secured Sensor Enabling Technologies</h3>
+                    <p class="text-gray-300">Florida International University<br>Miami, FL 33199</p>
+                </div>
+                <div class="flex justify-center">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 text-center">Quick Links</h3>
+                        <ul class="space-y-2 text-gray-300 text-center">
+                            <li><a href="about.html" class="hover:text-fiu-gold transition-colors">About</a></li>
+                            <li><a href="research.html" class="hover:text-fiu-gold transition-colors">Research</a></li>
+                            <li><a href="application.html" class="hover:text-fiu-gold transition-colors">Apply</a></li>
+                            <li><a href="contact.html" class="hover:text-fiu-gold transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 text-center">Resources</h3>
+                        <ul class="space-y-2 text-gray-300 text-center">
+                            <li><a href="faq.html" class="hover:text-fiu-gold transition-colors">FAQs</a></li>
+                            <li><a href="https://etap.nsf.gov/" class="hover:text-fiu-gold transition-colors" target="_blank">NSF REU Program</a></li>
+                            <li><a href="https://cec.fiu.edu/" class="hover:text-fiu-gold transition-colors" target="_blank">FIU Engineering</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 text-center">Follow Us</h3>
+                        <div class="flex space-x-4 justify-center">
+                            <a href="https://x.com/FIU" class="text-gray-300 hover:text-fiu-gold transition-colors" target="_blank">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/school/florida-international-university/" class="text-gray-300 hover:text-fiu-gold transition-colors" target="_blank">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/fiuinstagram/?hl=en" class="text-gray-300 hover:text-fiu-gold transition-colors" target="_blank">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Florida International University. All rights reserved. | This material is based upon work supported by the National Science Foundation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 
