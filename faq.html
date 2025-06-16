@@ -19,6 +19,7 @@
         }
     </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/@vercel/analytics@1/dist/index.js"></script>
 </head>
 <body class="bg-white">
     <!-- Navigation -->
@@ -33,7 +34,7 @@
                     </div>
                     <div class="ml-2 sm:ml-4">
                         <h1 class="text-sm sm:text-lg md:text-xl font-bold hidden sm:block">REU ASSET: Advanced Secured Sensor Enabling Technologies</h1>
-                        <h1 class="text-sm font-bold block sm:hidden">REU ASSET</h1>
+                        <h1 class="text-xs font-bold block sm:hidden">REU ASSET: Advanced Secured Sensor Enabling Technologies</h1>
                     </div>
                 </div>
                 <div class="hidden md:block">
@@ -47,17 +48,27 @@
                         <a href="contact.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
                     </div>
                 </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-fiu-gold focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-fiu-navy">
+                <a href="index.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="research.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Research Projects</a>
+                <a href="faculty.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Faculty Mentors</a>
+                <a href="application.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Application Info</a>
+                <a href="faq.html" class="bg-fiu-gold text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">FAQs</a>
+                <a href="contact.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Contact</a>
             </div>
         </div>
     </nav>
-
-    <!-- Mobile Menu JavaScript -->
-    <script>
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
 
     <!-- Page Header -->
     <section class="bg-fiu-navy text-white py-16">
@@ -350,42 +361,35 @@
     </footer>
 
     <script>
-        // Mobile menu toggle (only if mobile menu button exists)
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        if (mobileMenuButton) {
-            mobileMenuButton.addEventListener('click', function() {
-                const mobileMenu = document.getElementById('mobile-menu');
-                mobileMenu.classList.toggle('hidden');
-            });
-        }
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
 
-        // FAQ accordion functionality
-        document.querySelectorAll('.faq-toggle').forEach(button => {
-            button.addEventListener('click', function() {
-                const targetId = this.getAttribute('data-target');
-                const content = document.getElementById(targetId);
-                const icon = this.querySelector('i');
-                
-                // Toggle content visibility
-                content.classList.toggle('hidden');
-                
-                // Rotate icon
-                if (content.classList.contains('hidden')) {
-                    icon.style.transform = 'rotate(0deg)';
-                } else {
-                    icon.style.transform = 'rotate(180deg)';
-                }
-                
-                // Close other open FAQs (optional - uncomment for accordion behavior)
-                /*
-                document.querySelectorAll('.faq-content').forEach(otherContent => {
-                    if (otherContent !== content && !otherContent.classList.contains('hidden')) {
-                        otherContent.classList.add('hidden');
-                        const otherButton = document.querySelector(`[data-target="${otherContent.id}"] i`);
-                        otherButton.style.transform = 'rotate(0deg)';
+            // FAQ accordion functionality
+            document.querySelectorAll('.faq-toggle').forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-target');
+                    const content = document.getElementById(targetId);
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle content visibility
+                    content.classList.toggle('hidden');
+                    
+                    // Rotate icon
+                    if (content.classList.contains('hidden')) {
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        icon.style.transform = 'rotate(180deg)';
                     }
                 });
-                */
             });
         });
     </script>

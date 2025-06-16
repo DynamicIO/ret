@@ -20,6 +20,7 @@
         }
     </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/@vercel/analytics@1/dist/index.js"></script>
 </head>
 <body class="bg-white">
     <!-- Navigation -->
@@ -34,7 +35,7 @@
                     </div>
                     <div class="ml-2 sm:ml-4">
                         <h1 class="text-sm sm:text-lg md:text-xl font-bold hidden sm:block">REU ASSET: Advanced Secured Sensor Enabling Technologies</h1>
-                        <h1 class="text-sm font-bold block sm:hidden">REU ASSET</h1>
+                        <h1 class="text-xs font-bold block sm:hidden">REU ASSET: Advanced Secured Sensor Enabling Technologies</h1>
                     </div>
                 </div>
                 <div class="hidden md:block">
@@ -72,9 +73,17 @@
 
     <!-- Mobile Menu JavaScript -->
     <script>
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
         });
     </script>
 
@@ -285,12 +294,6 @@
     </footer>
 
     <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
-
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
