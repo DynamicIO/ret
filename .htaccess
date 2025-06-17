@@ -1,0 +1,26 @@
+RewriteEngine On
+
+# Handle clean URLs without trailing slash
+RewriteRule ^about$ about/index.html [L]
+RewriteRule ^application$ application/index.html [L]
+RewriteRule ^contact$ contact/index.html [L]
+RewriteRule ^faculty$ faculty/index.html [L]
+RewriteRule ^faq$ faq/index.html [L]
+RewriteRule ^research$ research/index.html [L]
+RewriteRule ^alumni$ alumni/index.html [L]
+
+# Handle clean URLs with trailing slash
+RewriteRule ^about/$ about/index.html [L]
+RewriteRule ^application/$ application/index.html [L]
+RewriteRule ^contact/$ contact/index.html [L]
+RewriteRule ^faculty/$ faculty/index.html [L]
+RewriteRule ^faq/$ faq/index.html [L]
+RewriteRule ^research/$ research/index.html [L]
+RewriteRule ^alumni/$ alumni/index.html [L]
+
+# Optional: Force trailing slash for clean URLs
+# RewriteRule ^([^/.]+)$ $1/ [R=301,L]
+
+# Optional: Remove .html extension from direct access
+# RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+# RewriteRule ^ /%1/ [NC,L,R=301] 
