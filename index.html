@@ -45,6 +45,7 @@
                         <a href="research.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Research Projects</a>
                         <a href="faculty.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Faculty Mentors</a>
                         <a href="application.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Application Info</a>
+                        <a href="alumni.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Alumni</a>
                         <a href="faq.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">FAQs</a>
                         <a href="contact.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
                     </div>
@@ -65,6 +66,7 @@
                 <a href="research.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Research Projects</a>
                 <a href="faculty.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Faculty Mentors</a>
                 <a href="application.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Application Info</a>
+                <a href="alumni.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Alumni</a>
                 <a href="faq.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">FAQs</a>
                 <a href="contact.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Contact</a>
             </div>
@@ -87,28 +89,57 @@
         });
     </script>
 
-    <!-- Hero Banner -->
-    <section class="relative text-white">
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-24">
-            <div class="text-center">
-                <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
-                    REU ASSET: Advanced Secured Sensor Enabling Technologies
-                </h1>
-                <p class="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed">
-                    Join cutting-edge research in advanced sensor technologies, cybersecurity, and emerging technologies at Florida International University
-                </p>
-                <div class="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
-                    <a href="https://etap.nsf.gov/award/184/opportunity/7890" class="block sm:inline-block bg-fiu-gold text-fiu-navy px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-fiu-light-gold transition-colors shadow-lg" target="_blank">
-                        Apply Now
-                    </a>
-                    <a href="about.html" class="block sm:inline-block border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-white hover:text-fiu-navy transition-colors">
-                        Learn More
-                    </a>
+    <!-- Hero Section -->
+    <section class="relative">
+        <div class="relative h-[600px] overflow-hidden">
+            <!-- Slides -->
+            <div class="slides-container h-full">
+                <div class="slide absolute inset-0 w-full h-full transition-opacity duration-500">
+                    <img src="group2015.jpg" alt="REU Students" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                </div>
+                <div class="slide absolute inset-0 w-full h-full transition-opacity duration-500 opacity-0">
+                    <img src="2.jpg" alt="REU Students" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                </div>
+                <div class="slide absolute inset-0 w-full h-full transition-opacity duration-500 opacity-0">
+                    <img src="4.jpg" alt="REU Students" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                </div>
+                <div class="slide absolute inset-0 w-full h-full transition-opacity duration-500 opacity-0">
+                    <img src="5.jpg" alt="REU Students" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                </div>
+            </div>
+
+            <!-- Slide Indicators -->
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                <button class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-colors" onclick="goToSlide(0)"></button>
+                <button class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-colors" onclick="goToSlide(1)"></button>
+                <button class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-colors" onclick="goToSlide(2)"></button>
+                <button class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-colors" onclick="goToSlide(3)"></button>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="absolute inset-0 flex items-center justify-center text-center">
+                <div class="max-w-4xl mx-auto px-4">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+                        REU ASSET: Advanced Secured Sensor Enabling Technologies
+                    </h1>
+                    <p class="text-xl md:text-2xl text-white mb-8">
+                        Summer Research Experience for Undergraduates at Florida International University
+                    </p>
+                    <div class="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
+                        <a href="https://etap.nsf.gov/award/184/opportunity/7890" class="inline-block bg-fiu-gold text-fiu-navy px-8 py-4 rounded-lg text-lg font-semibold hover:bg-fiu-light-gold transition-colors" target="_blank">
+                            Apply Now
+                        </a>
+                        <a href="about.html" class="inline-block border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-fiu-navy transition-colors">
+                            Learn More
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('Group2015.jpg'); z-index: -1;"></div>
     </section>
 
     <!-- Program Overview -->
@@ -302,6 +333,41 @@
                 });
             });
         });
+
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const indicators = document.querySelectorAll('.slide-indicators button');
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.add('opacity-0'));
+            slides[index].classList.remove('opacity-0');
+            
+            // Update indicators
+            indicators.forEach(indicator => indicator.classList.remove('bg-opacity-100'));
+            indicators[index].classList.add('bg-opacity-100');
+            
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function goToSlide(index) {
+            showSlide(index);
+        }
+
+        // Auto-advance slides every 5 seconds
+        setInterval(nextSlide, 5000);
+
+        // Initialize first slide
+        showSlide(0);
     </script>
 </body>
 </html> 

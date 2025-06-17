@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REU Alumni - REU ASSET</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fiu-navy': '#002851',
+                        'fiu-gold': '#FFC72A',
+                        'fiu-light-gold': '#FFD55A'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/@vercel/analytics@1/dist/index.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-fiu-navy text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="index.html">
+                            <img class="h-8 sm:h-10 w-auto hover:opacity-80 transition-opacity cursor-pointer" src="../Florida_International_University_FIU_logo.svg.png" alt="FIU Logo">
+                        </a>
+                    </div>
+                    <div class="ml-2 sm:ml-4">
+                        <h1 class="text-sm sm:text-lg md:text-xl font-bold hidden sm:block">REU ASSET: Advanced Secured Sensor Enabling Technologies</h1>
+                        <h1 class="text-xs font-bold block sm:hidden">REU ASSET: Advanced Secured Sensor Enabling Technologies</h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="about.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="research.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Research Projects</a>
+                        <a href="faculty.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Faculty Mentors</a>
+                        <a href="application.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Application Info</a>
+                        <a href="alumni.html" class="bg-fiu-gold text-fiu-navy px-3 py-2 rounded-md text-sm font-medium">Alumni</a>
+                        <a href="faq.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">FAQs</a>
+                        <a href="contact.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-fiu-gold focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-fiu-navy">
+                <a href="index.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="research.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Research Projects</a>
+                <a href="faculty.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Faculty Mentors</a>
+                <a href="application.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Application Info</a>
+                <a href="alumni.html" class="bg-fiu-gold text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Alumni</a>
+                <a href="faq.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">FAQs</a>
+                <a href="contact.html" class="text-white hover:bg-fiu-gold hover:text-fiu-navy block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-fiu-navy text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">REU Alumni</h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                Celebrating over 16 years of REU ASSET program alumni (2009-2025) and their continued success in STEM fields
+            </p>
+        </div>
+    </section>
+
+    <!-- Alumni Overview Stats -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-fiu-navy mb-4">Program Impact</h2>
+                <p class="text-xl text-gray-700">Over 16 years of excellence in undergraduate research</p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="bg-fiu-navy text-white p-6 rounded-lg text-center">
+                    <div class="text-4xl font-bold mb-2">160+</div>
+                    <div class="text-fiu-gold font-semibold">Total Alumni</div>
+                    <div class="text-sm text-gray-300 mt-1">2009-2025</div>
+                </div>
+                <div class="bg-fiu-navy text-white p-6 rounded-lg text-center">
+                    <div class="text-4xl font-bold mb-2">80+</div>
+                    <div class="text-fiu-gold font-semibold">Universities</div>
+                    <div class="text-sm text-gray-300 mt-1">Represented</div>
+                </div>
+                <div class="bg-fiu-navy text-white p-6 rounded-lg text-center">
+                    <div class="text-4xl font-bold mb-2">25+</div>
+                    <div class="text-fiu-gold font-semibold">Faculty Mentors</div>
+                    <div class="text-sm text-gray-300 mt-1">Involved</div>
+                </div>
+                <div class="bg-fiu-navy text-white p-6 rounded-lg text-center">
+                    <div class="text-4xl font-bold mb-2">120+</div>
+                    <div class="text-fiu-gold font-semibold">Research Projects</div>
+                    <div class="text-sm text-gray-300 mt-1">Completed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alumni by Year - Collapsible Sections -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-fiu-navy mb-4">Alumni by Year</h2>
+                <p class="text-xl text-gray-700">Click on a year to view detailed information about our alumni</p>
+            </div>
+
+            <!-- Year Grid -->
+            <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 mb-12">
+                <button onclick="showYear(2025)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2025</button>
+                <button onclick="showYear(2024)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2024</button>
+                <button onclick="showYear(2023)" class="year-btn bg-fiu-navy hover:bg-fiu-gold text-white hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2023</button>
+                <button onclick="showYear(2022)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2022</button>
+                <button onclick="showYear(2021)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2021</button>
+                <button onclick="showYear(2020)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2020</button>
+                <button onclick="showYear(2019)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2019</button>
+                <button onclick="showYear(2018)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2018</button>
+                <button onclick="showYear(2017)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2017</button>
+                <button onclick="showYear(2016)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2016</button>
+                <button onclick="showYear(2015)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2015</button>
+                <button onclick="showYear(2014)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2014</button>
+                <button onclick="showYear(2013)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2013</button>
+                <button onclick="showYear(2012)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2012</button>
+                <button onclick="showYear(2011)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2011</button>
+                <button onclick="showYear(2010)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2010</button>
+                <button onclick="showYear(2009)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2009</button>
+            </div>
+
+            <!-- 2023 Alumni Section -->
+            <div id="year-2023" class="year-content">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-fiu-navy mb-2">Class of 2023</h3>
+                    <p class="text-gray-700">10 Alumni • 7 Universities • 6 Faculty Mentors</p>
+                </div>
+
+                <!-- Group Photo -->
+                <div class="text-center mb-8">
+                    <img src="REU2023-group.png" alt="REU 2023 Group Photo" class="mx-auto rounded-lg shadow-lg max-w-full h-64 object-cover">
+                    <p class="text-gray-600 mt-2 italic">REU ASSET 2023 Cohort</p>
+                </div>
+
+                <!-- Compact Alumni Grid -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Carson Goodwin</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of North Carolina Wilmington</p>
+                        <p class="text-sm text-gray-700 mb-2">Achieving High End-to-End Availability in VNF Networks</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Deng Pan</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Ben Abraham</h4>
+                        <p class="text-sm text-gray-600 mb-1">Kean University</p>
+                        <p class="text-sm text-gray-700 mb-2">Radio Fingerprinting for IoT Devices using Deep Learning</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Xuyu Wang</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Muhammad Nomad</h4>
+                        <p class="text-sm text-gray-600 mb-1">George Mason University</p>
+                        <p class="text-sm text-gray-700 mb-2">Federated Learning for COVID-19 Detection</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Hadi Amini</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Jacob Peirce</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of Memphis</p>
+                        <p class="text-sm text-gray-700 mb-2">LoRa-based Environment Monitoring System</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Mo Sha</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Adonis Paulino</h4>
+                        <p class="text-sm text-gray-600 mb-1">Iona University</p>
+                        <p class="text-sm text-gray-700 mb-2">Achieving Complete Software Implementation of Honeypots on Virtual PLC Systems using OpenPLC</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Ruimin Sun</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Emma Worthington</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of Colorado Boulder</p>
+                        <p class="text-sm text-gray-700 mb-2">Improved Robust Activation Functions in Neural Networks in Adversarial Machine Learning</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Brian Yang</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of Michigan</p>
+                        <p class="text-sm text-gray-700 mb-2">Using Occlusion Boundary Uncertainty Masks to Defend Against Adversarial Examples</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Christian Rodriguez</h4>
+                        <p class="text-sm text-gray-600 mb-1">Florida International University</p>
+                        <p class="text-sm text-gray-700 mb-2">IoT Mobility Challenge</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Darielis Merced Calderon</h4>
+                        <p class="text-sm text-gray-600 mb-1">Florida International University</p>
+                        <p class="text-sm text-gray-700 mb-2">IoT Mobility Challenge</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Giancarlo Padron</h4>
+                        <p class="text-sm text-gray-600 mb-1">Florida International University</p>
+                        <p class="text-sm text-gray-700 mb-2">IoT Mobility Challenge</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2022 Alumni Section -->
+            <div id="year-2022" class="year-content hidden">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-fiu-navy mb-2">Class of 2022</h3>
+                    <p class="text-gray-700">5 Alumni • 4 Universities • 2 Faculty Mentors</p>
+                </div>
+
+                <!-- Group Photos -->
+                <div class="text-center mb-8">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                        <img src="20221.jpg" alt="REU 2022 Photo 1" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                        <img src="20222.jpg" alt="REU 2022 Photo 2" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                        <img src="20223.jpg" alt="REU 2022 Photo 3" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                        <img src="20224.jpg" alt="REU 2022 Photo 4" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                    </div>
+                    <p class="text-gray-600 mt-4 italic">REU ASSET 2022 Cohort</p>
+                </div>
+
+                <!-- Compact Alumni Grid -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Rayyan Saleh</h4>
+                        <p class="text-sm text-gray-600 mb-1">Old Dominion University</p>
+                        <p class="text-sm text-gray-700 mb-2">Threat Detection in Mobile IoT-Based Blockchain using Deep Learning</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Isabella Enriquez</h4>
+                        <p class="text-sm text-gray-600 mb-1">Florida International University</p>
+                        <p class="text-sm text-gray-700 mb-2">Adversarial Machine Learning Survey: A Robust Generalization Perspective</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">RoJon Barnett</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of Central Arkansas</p>
+                        <p class="text-sm text-gray-700 mb-2">Adversarial Machine Learning Survey: A Robust Generalization Perspective</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Chance Miller</h4>
+                        <p class="text-sm text-gray-600 mb-1">Florida International University</p>
+                        <p class="text-sm text-gray-700 mb-2">Performance Enhancement of ASSET Network-based Intrusion Detection Systems</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Iyengar</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Michelle Guan</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of California, Berkeley</p>
+                        <p class="text-sm text-gray-700 mb-2">Amodal Symbol Systems & Adversarial Machine Learning</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2021 Alumni Section -->
+            <div id="year-2021" class="year-content hidden">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-fiu-navy mb-2">Class of 2021</h3>
+                    <p class="text-gray-700">8 Alumni • 7 Universities • 4 Faculty Mentors</p>
+                </div>
+
+                <!-- Publication Highlights -->
+                <div class="bg-fiu-gold bg-opacity-10 border-l-4 border-fiu-gold p-6 mb-8 rounded-r-lg">
+                    <h4 class="text-lg font-bold text-fiu-navy mb-4 flex items-center">
+                        <i class="fas fa-trophy mr-2 text-fiu-gold"></i>
+                        Publication Highlights
+                    </h4>
+                    <div class="space-y-3">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <p class="text-sm text-gray-700">
+                                <strong class="text-fiu-navy">Congratulations to Raghad Alabagi</strong> for their publication that appeared in 
+                                <em>2021 International Conference on Intelligent Human Computer Interaction (IHCI-2021)</em>!
+                            </p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <p class="text-sm text-gray-700">
+                                <strong class="text-fiu-navy">Congratulations to Jason Nucciarone</strong> for their publication that appeared in 
+                                <em>2021 IEEE BigData International Workshop on Big Data Tools, Methods, and Use Cases for Innovative Scientific Discovery (BTSD-2021)</em>!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group Photos -->
+                <div class="text-center mb-8">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-6xl mx-auto">
+                        <img src="20211.png" alt="REU 2021 Photo 1" class="rounded-lg shadow-lg w-full h-40 object-cover">
+                        <img src="20212.png" alt="REU 2021 Photo 2" class="rounded-lg shadow-lg w-full h-40 object-cover">
+                        <img src="20213.png" alt="REU 2021 Photo 3" class="rounded-lg shadow-lg w-full h-40 object-cover">
+                        <img src="20214.png" alt="REU 2021 Photo 4" class="rounded-lg shadow-lg w-full h-40 object-cover">
+                        <img src="20215.png" alt="REU 2021 Photo 5" class="rounded-lg shadow-lg w-full h-40 object-cover">
+                        <img src="20216.png" alt="REU 2021 Photo 6" class="rounded-lg shadow-lg w-full h-40 object-cover">
+                        <img src="20217.png" alt="REU 2021 Photo 7" class="rounded-lg shadow-lg w-full h-40 object-cover">
+                        <img src="20218.png" alt="REU 2021 Photo 8" class="rounded-lg shadow-lg w-full h-40 object-cover">
+                    </div>
+                    <p class="text-gray-600 mt-4 italic">REU ASSET 2021 Cohort</p>
+                </div>
+
+                <!-- Compact Alumni Grid -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Nirel Gershwind</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of Maryland</p>
+                        <p class="text-sm text-gray-700 mb-2">Improving Blockchain Throughput in Mobile Wireless Sensor Networks</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Matthew Post</h4>
+                        <p class="text-sm text-gray-600 mb-1">Penn State Harrisburg</p>
+                        <p class="text-sm text-gray-700 mb-2">Deception-Based Strategies for Wireless Networks</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border-2 border-fiu-gold">
+                        <h4 class="font-bold text-fiu-navy mb-1 flex items-center">
+                            Raghad Alabagi
+                            <i class="fas fa-star text-fiu-gold ml-2 text-xs" title="Published Author"></i>
+                        </h4>
+                        <p class="text-sm text-gray-600 mb-1">University of Arizona</p>
+                        <p class="text-sm text-gray-700 mb-2">Federated Learning Algorithms for Distributed Decision-Making</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Hadi M. Amini</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Eric Inae</h4>
+                        <p class="text-sm text-gray-600 mb-1">Andrews University</p>
+                        <p class="text-sm text-gray-700 mb-2">Improving Adversarial Attacks for Regression Problems in IoT</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border-2 border-fiu-gold">
+                        <h4 class="font-bold text-fiu-navy mb-1 flex items-center">
+                            Jason Nucciarone
+                            <i class="fas fa-star text-fiu-gold ml-2 text-xs" title="Published Author"></i>
+                        </h4>
+                        <p class="text-sm text-gray-600 mb-1">Pennsylvania State University</p>
+                        <p class="text-sm text-gray-700 mb-2">A Plugin-Based, Open MPI Framework for Adversarial Machine Learning</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Emmanuel Dolce</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of Massachusetts Boston</p>
+                        <p class="text-sm text-gray-700 mb-2">Environmental Citizenship</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Leonardo Bobadilla</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Yassel Pena</h4>
+                        <p class="text-sm text-gray-600 mb-1">Florida International University</p>
+                        <p class="text-sm text-gray-700 mb-2">Perceptions of Abuse Among Social Network Users</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Bogdan Carbunar</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Omar Guerra</h4>
+                        <p class="text-sm text-gray-600 mb-1">Florida International University</p>
+                        <p class="text-sm text-gray-700 mb-2">Merkle KD-Tree Blockchain for Highly Mobile IoT Networks</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2020 Alumni Section -->
+            <div id="year-2020" class="year-content hidden">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-fiu-navy mb-2">Class of 2020</h3>
+                    <p class="text-gray-700">6 Alumni • 4 Universities • 3 Faculty Mentors</p>
+                </div>
+
+                <!-- Publication Highlights -->
+                <div class="bg-fiu-gold bg-opacity-10 border-l-4 border-fiu-gold p-6 mb-8 rounded-r-lg">
+                    <h4 class="text-lg font-bold text-fiu-navy mb-4 flex items-center">
+                        <i class="fas fa-trophy mr-2 text-fiu-gold"></i>
+                        Publication Highlights
+                    </h4>
+                    <div class="space-y-3">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <p class="text-sm text-gray-700">
+                                <strong class="text-fiu-navy">Congratulations to Meleik Hyman</strong> for their publication that appeared in the 
+                                <em>Patterns 2021 Journal</em>!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compact Alumni Grid -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Maxwell Rodriguez</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of Florida</p>
+                        <p class="text-sm text-gray-700 mb-2">Defenses for Poison Attacks in Adversarial Machine Learning</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Lora Milam</h4>
+                        <p class="text-sm text-gray-600 mb-1">Texas Tech University</p>
+                        <p class="text-sm text-gray-700 mb-2">Defenses for Poison Attacks in Adversarial Machine Learning</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Jared Parker</h4>
+                        <p class="text-sm text-gray-600 mb-1">Virginia Commonwealth University</p>
+                        <p class="text-sm text-gray-700 mb-2">Extension of Local Re-Encoding in Distributed Matrix Multiplication</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Jun Li</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Santiago Perez</h4>
+                        <p class="text-sm text-gray-600 mb-1">Florida International University</p>
+                        <p class="text-sm text-gray-700 mb-2">Defenses for Poison Attacks in Adversarial Machine Learning</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Omar Guerra</h4>
+                        <p class="text-sm text-gray-600 mb-1">Florida International University</p>
+                        <p class="text-sm text-gray-700 mb-2">Sensor Network Inter-Communication via Blockchain</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border-2 border-fiu-gold">
+                        <h4 class="font-bold text-fiu-navy mb-1 flex items-center">
+                            Meleik Hyman
+                            <i class="fas fa-star text-fiu-gold ml-2 text-xs" title="Published Author"></i>
+                        </h4>
+                        <p class="text-sm text-gray-600 mb-1">Florida International University</p>
+                        <p class="text-sm text-gray-700 mb-2">COVID-19 Framework (Analysis/Prediction/Visualization)</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Hadi M. Amini</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2019 Alumni Section -->
+            <div id="year-2019" class="year-content hidden">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-fiu-navy mb-2">Class of 2019</h3>
+                    <p class="text-gray-700">13 Alumni • 8 Universities • 5 Faculty Mentors</p>
+                </div>
+
+                <!-- Publication Highlights -->
+                <div class="bg-fiu-gold bg-opacity-10 border-l-4 border-fiu-gold p-6 mb-8 rounded-r-lg">
+                    <h4 class="text-lg font-bold text-fiu-navy mb-4 flex items-center">
+                        <i class="fas fa-trophy mr-2 text-fiu-gold"></i>
+                        Publication Highlights
+                    </h4>
+                    <div class="space-y-3">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <p class="text-sm text-gray-700">
+                                <strong class="text-fiu-navy">Congratulations to Edwin Aguilar and Eric Perez</strong> for their publication that appeared in 
+                                <em>IEEE MASS 2019</em>!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group Photos -->
+                <div class="text-center mb-8">
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+                        <img src="20191.jpg" alt="REU 2019 Photo 1" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                        <img src="20192.jpg" alt="REU 2019 Photo 2" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                        <img src="20193.jpg" alt="REU 2019 Photo 3" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                        <img src="20194.jpg" alt="REU 2019 Photo 4" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                        <img src="20195.jpg" alt="REU 2019 Photo 5" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                        <img src="20196.jpg" alt="REU 2019 Photo 6" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                    </div>
+                    <p class="text-gray-600 mt-4 italic">REU ASSET 2019 Cohort</p>
+                </div>
+
+                <!-- Compact Alumni Grid -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Anher Pinky</h4>
+                        <p class="text-sm text-gray-600 mb-1">Syracuse University</p>
+                        <p class="text-sm text-gray-700 mb-2">Identifications of Pathways and Functions in Breast Cancer Related Genes</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Ananda Mondal</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Anais Obregon</h4>
+                        <p class="text-sm text-gray-600 mb-1">Florida International University</p>
+                        <p class="text-sm text-gray-700 mb-2">Identifications of Pathways and Functions in Breast Cancer Related Genes</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Ananda Mondal</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border-2 border-fiu-gold">
+                        <h4 class="font-bold text-fiu-navy mb-1 flex items-center">
+                            Edwin Aguilar
+                            <i class="fas fa-star text-fiu-gold ml-2 text-xs" title="Published Author"></i>
+                        </h4>
+                        <p class="text-sm text-gray-600 mb-1">Florida International University</p>
+                        <p class="text-sm text-gray-700 mb-2">Lightweight Sensorchain</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border-2 border-fiu-gold">
+                        <h4 class="font-bold text-fiu-navy mb-1 flex items-center">
+                            Eric Perez
+                            <i class="fas fa-star text-fiu-gold ml-2 text-xs" title="Published Author"></i>
+                        </h4>
+                        <p class="text-sm text-gray-600 mb-1">Florida International University</p>
+                        <p class="text-sm text-gray-700 mb-2">Lightweight Sensorchain</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Juan Buena</h4>
+                        <p class="text-sm text-gray-600 mb-1">Syracuse University</p>
+                        <p class="text-sm text-gray-700 mb-2">Secure Network Authentication with Histograms Protocol</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Alex Afanasyev</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Kyle Dennison</h4>
+                        <p class="text-sm text-gray-600 mb-1">New College of Florida</p>
+                        <p class="text-sm text-gray-700 mb-2">Secure Network Authentication with Histograms Protocol</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Alexander Afanasyev</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Juanita Benjamin</h4>
+                        <p class="text-sm text-gray-600 mb-1">Texas Tech University</p>
+                        <p class="text-sm text-gray-700 mb-2">Secure Multi-Party Computation</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Leonardo Bobadilla</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Ken Nakama</h4>
+                        <p class="text-sm text-gray-600 mb-1">California State University</p>
+                        <p class="text-sm text-gray-700 mb-2">Secure Multi-Party Computation</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Leonardo Bobadilla</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Feras Khemakhem</h4>
+                        <p class="text-sm text-gray-600 mb-1">Texas A&M University</p>
+                        <p class="text-sm text-gray-700 mb-2">Dynamic Greedy Forwarding Routing Protocol</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou and Dr. Kianoosh Boroojeni</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">David Shapiro</h4>
+                        <p class="text-sm text-gray-600 mb-1">Humboldt State University</p>
+                        <p class="text-sm text-gray-700 mb-2">Dynamic Greedy Forwarding Routing Protocol</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou and Dr. Kianoosh Boroojeni</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Ricardo Boetto</h4>
+                        <p class="text-sm text-gray-600 mb-1">Florida International University</p>
+                        <p class="text-sm text-gray-700 mb-2">Analysis of FANET Routing Protocols</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Iyengar and Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Marcel Riera</h4>
+                        <p class="text-sm text-gray-600 mb-1">Florida International University</p>
+                        <p class="text-sm text-gray-700 mb-2">Analysis of FANET Routing Protocols</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Iyengar and Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Zachary Rouviere</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of Florida</p>
+                        <p class="text-sm text-gray-700 mb-2">Analysis of FANET Routing Protocols</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Iyengar and Dr. Niki Pissinou</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2018 Alumni Section -->
+            <div id="year-2018" class="year-content hidden">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-fiu-navy mb-2">Class of 2018</h3>
+                    <p class="text-gray-700">10 Alumni • 9 Universities • 6 Faculty Mentors</p>
+                </div>
+
+                <!-- Publication Highlights -->
+                <div class="bg-fiu-gold bg-opacity-10 border-l-4 border-fiu-gold p-6 mb-8 rounded-r-lg">
+                    <h4 class="text-lg font-bold text-fiu-navy mb-4 flex items-center">
+                        <i class="fas fa-trophy mr-2 text-fiu-gold"></i>
+                        Publication Highlights
+                    </h4>
+                    <div class="space-y-3">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <p class="text-sm text-gray-700">
+                                <strong class="text-fiu-navy">Congratulations to Corey Staier and Rain Kwan</strong> for their publication that appeared in 
+                                <em>IEEE iThings 2019</em>!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group Photos -->
+                <div class="text-center mb-8">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                        <img src="20181.jpg" alt="REU 2018 Photo 1" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                        <img src="20182.jpg" alt="REU 2018 Photo 2" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                        <img src="20183.jpg" alt="REU 2018 Photo 3" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                        <img src="20184.jpg" alt="REU 2018 Photo 4" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                    </div>
+                    <p class="text-gray-600 mt-4 italic">REU ASSET 2018 Cohort</p>
+                </div>
+
+                <!-- Compact Alumni Grid -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Aiko Dorothy Hassett</h4>
+                        <p class="text-sm text-gray-600 mb-1">Middlebury College</p>
+                        <p class="text-sm text-gray-700 mb-2">Semicircle Trapping Overlay Protocol (STOP)</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Kianoosh Boorojeni</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Benjamin Liang</h4>
+                        <p class="text-sm text-gray-600 mb-1">Princeton University</p>
+                        <p class="text-sm text-gray-700 mb-2">Utilizing Homophily in Online Social Networks for Reconnaissance Attacks</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border-2 border-fiu-gold">
+                        <h4 class="font-bold text-fiu-navy mb-1 flex items-center">
+                            Corey Staier
+                            <i class="fas fa-star text-fiu-gold ml-2 text-xs" title="Published Author"></i>
+                        </h4>
+                        <p class="text-sm text-gray-600 mb-1">University of Mary Washington</p>
+                        <p class="text-sm text-gray-700 mb-2">Lightweight Blockchain for Mobile Wireless Sensor Networks</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Eric Xu</h4>
+                        <p class="text-sm text-gray-600 mb-1">Northeastern University</p>
+                        <p class="text-sm text-gray-700 mb-2">Blockchain for Databases</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Jun Li</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Jalena Jones</h4>
+                        <p class="text-sm text-gray-600 mb-1">Claflin University</p>
+                        <p class="text-sm text-gray-700 mb-2">Bootstrapping Trust in NDN-Based Vehicular Network using SWIFT Trust</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Alex Afanasyev</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Janelie Diaz</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of Puerto Rico at Arecibo</p>
+                        <p class="text-sm text-gray-700 mb-2">Semicircle Trapping Overlay Protocol (STOP)</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Kianoosh Boorojeni</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Jason Chen</h4>
+                        <p class="text-sm text-gray-600 mb-1">Purdue University</p>
+                        <p class="text-sm text-gray-700 mb-2">Routing Protocols for Drone Communication</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Col. Jerry Miller</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Navneedh Maudgalya</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of California, Berkeley</p>
+                        <p class="text-sm text-gray-700 mb-2">Utilizing Homophily in Online Social Networks for Reconnaissance Attacks</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border-2 border-fiu-gold">
+                        <h4 class="font-bold text-fiu-navy mb-1 flex items-center">
+                            Rain Kwan
+                            <i class="fas fa-star text-fiu-gold ml-2 text-xs" title="Published Author"></i>
+                        </h4>
+                        <p class="text-sm text-gray-600 mb-1">New College of Florida</p>
+                        <p class="text-sm text-gray-700 mb-2">Lightweight Blockchain for Mobile Wireless Sensor Networks</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Yujian Tang</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of North Carolina Chapel Hill</p>
+                        <p class="text-sm text-gray-700 mb-2">Reputation Aware Data Cleaning for Mobile Crowdsensing via Correlated Data</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. S. S. Iyengar</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2017 Alumni Section -->
+            <div id="year-2017" class="year-content hidden">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-fiu-navy mb-2">Class of 2017</h3>
+                    <p class="text-gray-700">10 Alumni • 7 Universities • 6 Faculty Mentors</p>
+                </div>
+
+                <!-- Publication and Awards Highlights -->
+                <div class="bg-fiu-gold bg-opacity-10 border-l-4 border-fiu-gold p-6 mb-8 rounded-r-lg">
+                    <h4 class="text-lg font-bold text-fiu-navy mb-4 flex items-center">
+                        <i class="fas fa-trophy mr-2 text-fiu-gold"></i>
+                        Publication & Awards Highlights
+                    </h4>
+                    <div class="space-y-3">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <p class="text-sm text-gray-700">
+                                <strong class="text-fiu-navy">Congratulations to Sheila Alemany</strong> for her publication that appeared in 
+                                <em>ICNC 2018</em>!
+                            </p>
+                        </div>
+                        <div class="bg-gradient-to-r from-fiu-gold to-yellow-300 p-4 rounded-lg shadow-sm">
+                            <p class="text-sm text-fiu-navy font-semibold">
+                                <i class="fas fa-award mr-2"></i>
+                                <strong>Congratulations to Sheila Alemany</strong> for being an 
+                                <em>ACM CRA Outstanding Undergraduate Research finalist</em>!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compact Alumni Grid -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Sam Pisheh</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of California, Berkeley</p>
+                        <p class="text-sm text-gray-700 mb-2">Semicircle Trapping Overlay Protocol (STOP)</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Kianoosh Boorojeni</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-fiu-gold from-5% to-gray-50 p-4 rounded-lg border-2 border-fiu-gold shadow-md">
+                        <h4 class="font-bold text-fiu-navy mb-1 flex items-center">
+                            Sheila Alemany
+                            <i class="fas fa-star text-fiu-gold ml-2 text-xs" title="Published Author"></i>
+                            <i class="fas fa-award text-fiu-gold ml-1 text-xs" title="ACM CRA Finalist"></i>
+                        </h4>
+                        <p class="text-sm text-gray-600 mb-1">Florida International University</p>
+                        <p class="text-sm text-gray-700 mb-2">Context-Aware Data Cleaning for Mobile Wireless Sensor Networks: A Diversified Trust Approach</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                        <div class="mt-2 text-xs text-fiu-navy font-medium">
+                            <span class="bg-fiu-gold bg-opacity-20 px-2 py-1 rounded">ACM CRA Finalist</span>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Ashwin Bhat</h4>
+                        <p class="text-sm text-gray-600 mb-1">Johns Hopkins University</p>
+                        <p class="text-sm text-gray-700 mb-2">Creating Underlying Terrain Maps for Localization of Underwater Sensor-Enabled Vehicles</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Leonardo Bobadilla</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Siddarth Shanmuga Sundaram</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of California, Berkeley</p>
+                        <p class="text-sm text-gray-700 mb-2">Service Aware Routing in Network Function Virtualization (NFV) Networks</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Deng Pan</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Frank Liao</h4>
+                        <p class="text-sm text-gray-600 mb-1">Carnegie Mellon University</p>
+                        <p class="text-sm text-gray-700 mb-2">Colluding Reconnaissance Attacks with Incomplete Information</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. S S Iyengar</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Henry Xu</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of California, Berkeley</p>
+                        <p class="text-sm text-gray-700 mb-2">Colluding Reconnaissance Attacks with Incomplete Information</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. S S Iyengar</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Nicole Huscher</h4>
+                        <p class="text-sm text-gray-600 mb-1">Cornell University</p>
+                        <p class="text-sm text-gray-700 mb-2">Wormhole Detection in Mobile Wireless Sensor Networks</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">John Trinh</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of California, Berkeley</p>
+                        <p class="text-sm text-gray-700 mb-2">Wormhole Detection in Mobile Wireless Sensor Networks</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Joseph Caparelli</h4>
+                        <p class="text-sm text-gray-600 mb-1">Cornell University</p>
+                        <p class="text-sm text-gray-700 mb-2">TCP Hijacking with Active Re-synchronization</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Bogdan Carbunar</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Awzean Farshadi</h4>
+                        <p class="text-sm text-gray-600 mb-1">Miami-Dade College</p>
+                        <p class="text-sm text-gray-700 mb-2">Using Location Based Services in UAV Networks</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Col. Jerry Miller</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2016 Alumni Section -->
+            <div id="year-2016" class="year-content hidden">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-fiu-navy mb-2">Class of 2016</h3>
+                    <p class="text-gray-700">10 Alumni • 9 Universities • 8 Faculty Mentors</p>
+                </div>
+
+                <!-- Publication Highlights -->
+                <div class="bg-fiu-gold bg-opacity-10 border-l-4 border-fiu-gold p-6 mb-8 rounded-r-lg">
+                    <h4 class="text-lg font-bold text-fiu-navy mb-4 flex items-center">
+                        <i class="fas fa-trophy mr-2 text-fiu-gold"></i>
+                        Publication Highlights
+                    </h4>
+                    <div class="space-y-3">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <p class="text-sm text-gray-700">
+                                <strong class="text-fiu-navy">Congratulations to Oscar Sandoval</strong> for his publication that appeared in 
+                                <em>INFOCOMM 2017</em>!
+                            </p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <p class="text-sm text-gray-700">
+                                <strong class="text-fiu-navy">Congratulations to Anne-Liz Jeukeng</strong> for her publication that appeared in 
+                                <em>International Conference on Computing and Network Communications (ICNC 2017)</em>!
+                            </p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <p class="text-sm text-gray-700">
+                                <strong class="text-fiu-navy">Congratulations to Brandon Hernandez</strong> for his publication that appeared in 
+                                <em>ICDCS Workshop 2017</em>!
+                            </p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <p class="text-sm text-gray-700">
+                                <strong class="text-fiu-navy">Congratulations to Juan Caldas</strong> for his publication that appeared in 
+                                <em>International Conference on Computing and Network Communications (ICNC 2017)</em>!
+                            </p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <p class="text-sm text-gray-700">
+                                <strong class="text-fiu-navy">Congratulations to Paul Naghshineh</strong> for his publication that appeared in 
+                                <em>Biomedical Engineering Society Annual Meeting (BMES)</em>!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group Photos -->
+                <div class="text-center mb-8">
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+                        <img src="20161.jpg" alt="REU 2016 Photo 1" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                        <img src="20162.jpg" alt="REU 2016 Photo 2" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                        <img src="20163.jpg" alt="REU 2016 Photo 3" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                        <img src="20164.jpg" alt="REU 2016 Photo 4" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                        <img src="20165.jpg" alt="REU 2016 Photo 5" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                        <img src="20166.jpg" alt="REU 2016 Photo 6" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                    </div>
+                    <p class="text-gray-600 mt-4 italic">REU ASSET 2016 Cohort</p>
+                </div>
+
+                <!-- Compact Alumni Grid -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Alberic Davila</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of Puerto Rico</p>
+                        <p class="text-sm text-gray-700 mb-2">Integrating Secure Sensor Technologies with Video Design to teach History</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. King</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border-2 border-fiu-gold">
+                        <h4 class="font-bold text-fiu-navy mb-1 flex items-center">
+                            Anne-Liz Jeukeng
+                            <i class="fas fa-star text-fiu-gold ml-2 text-xs" title="Published Author"></i>
+                        </h4>
+                        <p class="text-sm text-gray-600 mb-1">University of Florida</p>
+                        <p class="text-sm text-gray-700 mb-2">Privacy Preserving Voronoi Cells for Location Based Services</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Wei Zeng</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border-2 border-fiu-gold">
+                        <h4 class="font-bold text-fiu-navy mb-1 flex items-center">
+                            Brandon Hernandez
+                            <i class="fas fa-star text-fiu-gold ml-2 text-xs" title="Published Author"></i>
+                        </h4>
+                        <p class="text-sm text-gray-600 mb-1">University of Texas at Rio Grande</p>
+                        <p class="text-sm text-gray-700 mb-2">Preventing Colluding Identity Clone Attacks in Online Social Networks</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. S S Iyengar</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Christopher Martin</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of Pennsylvania</p>
+                        <p class="text-sm text-gray-700 mb-2">Beta Trust Based Approach for Data Cleaning in Trajectory Data Streams</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">John Lim</h4>
+                        <p class="text-sm text-gray-600 mb-1">Villanova University</p>
+                        <p class="text-sm text-gray-700 mb-2">Analyzing Popularity in Sensor and Security Research</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Finlayson</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Joseph Stewart</h4>
+                        <p class="text-sm text-gray-600 mb-1">Shaw University</p>
+                        <p class="text-sm text-gray-700 mb-2">Secure Exchange of Micro-Bitcoins for Wireless Sensor Network</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Carbunar</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border-2 border-fiu-gold">
+                        <h4 class="font-bold text-fiu-navy mb-1 flex items-center">
+                            Juan Caldas
+                            <i class="fas fa-star text-fiu-gold ml-2 text-xs" title="Published Author"></i>
+                        </h4>
+                        <p class="text-sm text-gray-600 mb-1">Nova Southeastern University</p>
+                        <p class="text-sm text-gray-700 mb-2">Using Trajectory Sensor Data Stream Cleaning to Ensure the Survivability of Mobile Wireless Sensor Networks in Cyberspace</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border-2 border-fiu-gold">
+                        <h4 class="font-bold text-fiu-navy mb-1 flex items-center">
+                            Oscar Sandoval
+                            <i class="fas fa-star text-fiu-gold ml-2 text-xs" title="Published Author"></i>
+                        </h4>
+                        <p class="text-sm text-gray-600 mb-1">University of Virginia</p>
+                        <p class="text-sm text-gray-700 mb-2">Traffic Aware Placement of NFV Middleboxes for secure wireless sensor network communication</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Pan</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border-2 border-fiu-gold">
+                        <h4 class="font-bold text-fiu-navy mb-1 flex items-center">
+                            Paul Naghshineh
+                            <i class="fas fa-star text-fiu-gold ml-2 text-xs" title="Published Author"></i>
+                        </h4>
+                        <p class="text-sm text-gray-600 mb-1">The George Washington University</p>
+                        <p class="text-sm text-gray-700 mb-2">Secure Cloud Computing for Acute Stroke Diagnosis using sensors</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Fang</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Suk Man Chan</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of California</p>
+                        <p class="text-sm text-gray-700 mb-2">Algorithmic Problems in Energy Efficiency in Wireless Sensor Networks</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Xie</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Placeholder for other years -->
+            <div id="year-placeholder" class="year-content hidden">
+                <div class="text-center py-16">
+                    <div class="bg-gray-100 p-8 rounded-lg max-w-2xl mx-auto">
+                        <i class="fas fa-users text-4xl text-gray-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-600 mb-4">Coming Soon</h3>
+                        <p class="text-gray-600">Alumni data for this year will be added soon. Check back later for detailed information about our program participants.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-fiu-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Join Our Alumni Network</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                Become part of our growing community of researchers and innovators. Apply to the REU ASSET program and start your journey in advanced sensor technologies.
+            </p>
+            <div class="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
+                <a href="https://etap.nsf.gov/award/184/opportunity/7890" class="inline-block bg-fiu-gold text-fiu-navy px-8 py-4 rounded-lg text-lg font-semibold hover:bg-fiu-light-gold transition-colors" target="_blank">
+                    Apply Now
+                </a>
+                <a href="about.html" class="inline-block border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-fiu-navy transition-colors">
+                    Learn More About REU
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <h3 class="text-lg font-bold mb-4">REU ASSET: Advanced Secured Sensor Enabling Technologies</h3>
+                    <p class="text-gray-300">Florida International University<br>Miami, FL 33199</p>
+                </div>
+                <div class="flex justify-center">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 text-center">Quick Links</h3>
+                        <ul class="space-y-2 text-gray-300 text-center">
+                            <li><a href="about.html" class="hover:text-fiu-gold transition-colors">About</a></li>
+                            <li><a href="research.html" class="hover:text-fiu-gold transition-colors">Research</a></li>
+                            <li><a href="faculty.html" class="hover:text-fiu-gold transition-colors">Faculty</a></li>
+                            <li><a href="alumni.html" class="hover:text-fiu-gold transition-colors">Alumni</a></li>
+                            <li><a href="application.html" class="hover:text-fiu-gold transition-colors">Apply</a></li>
+                            <li><a href="contact.html" class="hover:text-fiu-gold transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 text-center">Resources</h3>
+                        <ul class="space-y-2 text-gray-300 text-center">
+                            <li><a href="faq.html" class="hover:text-fiu-gold transition-colors">FAQs</a></li>
+                            <li><a href="https://etap.nsf.gov/" class="hover:text-fiu-gold transition-colors" target="_blank">NSF REU Program</a></li>
+                            <li><a href="https://cec.fiu.edu/" class="hover:text-fiu-gold transition-colors" target="_blank">FIU Engineering</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 text-center">Follow Us</h3>
+                        <div class="flex space-x-4 justify-center">
+                            <a href="https://x.com/FIU" class="text-gray-300 hover:text-fiu-gold transition-colors" target="_blank">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/school/florida-international-university/" class="text-gray-300 hover:text-fiu-gold transition-colors" target="_blank">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/fiuinstagram/?hl=en" class="text-gray-300 hover:text-fiu-gold transition-colors" target="_blank">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 Florida International University. All rights reserved. | This material is based upon work supported by the National Science Foundation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileMenu = document.querySelector('.mobile-menu');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+
+        // Year navigation functionality
+        function showYear(year) {
+            // Hide all year content
+            const yearContents = document.querySelectorAll('.year-content');
+            yearContents.forEach(content => content.classList.add('hidden'));
+            
+            // Reset all year buttons
+            const yearBtns = document.querySelectorAll('.year-btn');
+            yearBtns.forEach(btn => {
+                btn.classList.remove('bg-fiu-navy', 'text-white');
+                btn.classList.add('bg-gray-300', 'text-gray-600');
+            });
+            
+            // Show selected year content
+            const selectedContent = document.getElementById(`year-${year}`);
+            if (selectedContent) {
+                selectedContent.classList.remove('hidden');
+            } else {
+                // Show placeholder for years without data
+                document.getElementById('year-placeholder').classList.remove('hidden');
+            }
+            
+            // Highlight selected year button
+            const selectedBtn = document.querySelector(`[onclick="showYear(${year})"]`);
+            if (selectedBtn) {
+                selectedBtn.classList.add('bg-fiu-navy', 'text-white');
+                selectedBtn.classList.remove('bg-gray-300', 'text-gray-600');
+            }
+        }
+
+        // Initialize page to show 2023 by default
+        document.addEventListener('DOMContentLoaded', function() {
+            showYear(2023);
+        });
+    </script>
+</body>
+</html> 
