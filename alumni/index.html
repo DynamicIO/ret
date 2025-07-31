@@ -126,9 +126,9 @@
 
             <!-- Year Grid -->
             <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 mb-12">
-                <button onclick="showYear(2025)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2025</button>
+                <button onclick="showYear(2025)" class="year-btn bg-fiu-navy hover:bg-fiu-gold text-white hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2025</button>
                 <button onclick="showYear(2024)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2024</button>
-                <button onclick="showYear(2023)" class="year-btn bg-fiu-navy hover:bg-fiu-gold text-white hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2023</button>
+                <button onclick="showYear(2023)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2023</button>
                 <button onclick="showYear(2022)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2022</button>
                 <button onclick="showYear(2021)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2021</button>
                 <button onclick="showYear(2020)" class="year-btn bg-gray-300 hover:bg-fiu-gold text-gray-600 hover:text-fiu-navy p-3 rounded-lg font-bold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-fiu-gold">2020</button>
@@ -146,7 +146,7 @@
             </div>
 
             <!-- 2023 Alumni Section -->
-            <div id="year-2023" class="year-content">
+            <div id="year-2023" class="year-content hidden">
                 <div class="text-center mb-8">
                     <h3 class="text-2xl font-bold text-fiu-navy mb-2">Class of 2023</h3>
                     <p class="text-gray-700">10 Alumni • 7 Universities • 6 Faculty Mentors</p>
@@ -219,6 +219,81 @@
                         <p class="text-sm text-gray-600 mb-1">Florida International University</p>
                         <p class="text-sm text-gray-700 mb-2">IoT Mobility Challenge</p>
                         <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Niki Pissinou</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2025 Alumni Section -->
+            <div id="year-2025" class="year-content">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-fiu-navy mb-2">Class of 2025</h3>
+                    <p class="text-gray-700">9 Alumni • 6 Universities • 3 Faculty Mentors</p>
+                </div>
+
+                <!-- Group Photos -->
+                <div class="text-center mb-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+                        <img src="../2025-group.jpg" alt="REU 2025 Group Photo 1" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                        <img src="../2025-group-2.jpg" alt="REU 2025 Group Photo 2" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                    </div>
+                    <p class="text-gray-600 mt-4 italic">REU ASSET 2025 Cohort</p>
+                </div>
+
+                <!-- Compact Alumni Grid -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Alejandro Jimenez Gerena</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of Puerto Rico</p>
+                        <p class="text-sm text-gray-700 mb-2">Secsplit llm</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: TBD</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Bayden Hussien</h4>
+                        <p class="text-sm text-gray-600 mb-1">IDK</p>
+                        <p class="text-sm text-gray-700 mb-2">Secsplit llm</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: TBD</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Ben Abraham</h4>
+                        <p class="text-sm text-gray-600 mb-1">Kean University</p>
+                        <p class="text-sm text-gray-700 mb-2">Quantum Networking: Evaluating Entanglement Swapping Strategies by Simulation</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Deng Pan</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Carlos Caros</h4>
+                        <p class="text-sm text-gray-600 mb-1">Florida International University</p>
+                        <p class="text-sm text-gray-700 mb-2">Implementing SLMs in Edge Devices for Self-Driving Vehicles</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Claudia Saleem</h4>
+                        <p class="text-sm text-gray-600 mb-1">Florida International University</p>
+                        <p class="text-sm text-gray-700 mb-2">Comparing small language models for real time on device decision support</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Nikki Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Daniel Perera</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of Central Florida</p>
+                        <p class="text-sm text-gray-700 mb-2">LLM generate synthetic samples on speech samples</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: TBD</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Meythri Lakkireddy</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of Texas at San Antonio</p>
+                        <p class="text-sm text-gray-700 mb-2">LLM generate synthetic samples on speech samples</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: TBD</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Miguel Garcia</h4>
+                        <p class="text-sm text-gray-600 mb-1">University of Texas</p>
+                        <p class="text-sm text-gray-700 mb-2">Implementing SLMs in Edge Devices for Self-Driving Vehicles</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Pissinou</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-fiu-navy mb-1">Moustafa Mohammed</h4>
+                        <p class="text-sm text-gray-600 mb-1">George Washington University</p>
+                        <p class="text-sm text-gray-700 mb-2">Comparing small language models for real time on device decision support</p>
+                        <p class="text-xs text-fiu-gold font-semibold">Mentor: Dr. Nikki Pissinou</p>
                     </div>
                 </div>
             </div>
